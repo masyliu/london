@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Masy Liu">
+  <meta name="title" content="London">
+  <meta name="description" content="London">
+  <meta name="keywords" content="London">
+  <title>London</title>
+  <link rel="icon" href="image/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://kit.fontawesome.com/f49a20a247.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- header -->
+  <header>
+    <img src="/image/logo.png" alt="logo" style="width: 100px; height: 100px;">
+    <ul class="navbar">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#feature">Feature</a></li>
+      <li><a href="#picture">Picture</a></li>
+      <li><a href="#artist">Artist</a></li>
+      <li><a href="#location">Location</a></li>
+    </ul>
+  </header>
+<!-- slider -->
+  <section class="slider">
+    <div class="slide">
+      <img src="/image/slider1.jpg" alt="Big Ben" style="width: 100vw; height: 100vh;">
+      <div class="slide-content">
+        <h1>Welcome to London</h1>
+        <h2>The most beautiful and busy city</h2>
+      </div>
+    </div>
+    <!-- <div class="slide">
+      <img src="/image/slider2.jpg" alt="The Shard" style="width: 100vw; height: 100vh;">
+      <div class="slide-content">
+        <h1>Enjot the life</h1>
+        <h2>Brimming with culture and arts as its dignity</h2>
+      </div>
+    </div> -->
+    <div class="slider-dots dots">
+      <button class="slider-dot dot"></button>
+      <button class="slider-dot dot"></button>
+    </div>
+  </section>
+<!-- about -->
+  <section id="about" class="about">
+    <div class="about-title title">
+      <h1>About London</h1>
+      <p>The capital of the United Kingdom</p>
+    </div>
+    <div class="about-container">
+      <div class="aboutContent">
+        <h3>Famous Places</h3>
+        <p>London contains four World Heritage Sites: the Tower of London; Kew Gardens; the site comprising the Palace of Westminster, Westminster Abbey, and St Margaret's Church; and the historic settlement in Greenwich where the Royal Observatory, Greenwich defines the Prime Meridian (0° longitude) and Greenwich Mean Time. Other landmarks include Buckingham Palace, the London Eye, Piccadilly Circus, St Paul's Cathedral, Tower Bridge, Trafalgar Square and The Shard.</p>
+        <p>London has numerous museums, galleries, libraries and sporting events. These include the British Museum, National Gallery, Natural History Museum, Tate Modern, British Library and West End theatres. The London Underground is the oldest underground railway network in the world.</p>
+      </div>
+      <div class="flavourPlace">
+        <h3>My Flavour Place</h3>
+        <h4>Tower Bridge</h4>
+        <div class="flavour">
+          <div class="flavourBar flavourBar-TowerBridge" role="flavourBar" aria-valuenow="" aria-valuemin="0" aria-valuemin="100" style="width: 80%">
+            <span class="sr-only">80% Complete (Tower Bridge)</span>
+          </div>
+        </div>
+        <h4>Notting Hill</h4>
+        <div class="flavour">
+          <div class="flavourBar flavourBar-NottingHill" role="flavourBar" aria-valuenow="" aria-valuemin="0" aria-valuemin="100" style="width: 90%">
+            <span class="sr-only">90% Complete (Notting Hill)</span>
+          </div>
+        </div>
+        <h4>Regent Street</h4>
+        <div class="flavour">
+          <div class="flavourBar flavourBar-RegentStreet" role="flavourBar" aria-valuenow="" aria-valuemin="0" aria-valuemin="100" style="width: 60%">
+            <span class="sr-only">60% Complete (Regent Street)</span>
+          </div>
+        </div>
+        <h4>Covent Garden</h4>
+        <div class="flavour">
+          <div class="flavourBar flavourBar-CoventGarden" role="flavourBar" aria-valuenow="" aria-valuemin="0" aria-valuemin="100" style="width: 70%">
+            <span class="sr-only">70% Complete (Covent Garden)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- quoteArea -->
+  <section class="area quoteArea">
+    <p class="quote">"The future belongs to those who believe in the beauty of their dreams."<br>
+      <span> -Eleanor Roosevelt</span></p>
+  </section>
+<!-- feature -->
+  <section id="feature" class="feature">
+    <div class="feature-title title">
+      <h1>London Feature</h1>
+      <p>There are plenty of fun activities in London</p>
+    </div>
+    <div class="feature-group">
+      <div class="feature-music">
+        <i class="fas fa-music"></i>
+        <h2>Music</h2>
+        <p>From rock, pop and dance, to jazz, opera and classical music, London is buzzing with an incredible music scene. </p>
+      </div>
+      <div class="feature-sports">
+        <i class="fas fa-futbol"></i>
+        <h2>Sports</h2>
+        <p>There are major sporting events in London, including football matches, rugby games and cricket matches at world-famous venues.</p>
+      </div>
+      <div class="feature-fashion">
+        <i class="fas fa-tshirt"></i>
+        <h2>Fashion</h2>
+        <p>The wide range of designer shops and boutiques that can be found in London make it the "fashion capital of the world".</p>
+      </div>
+    </div>
+    <div class="accordion-container">
+      <div id="accordion" class="panel-group">
+        <div class="panel">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="collapse1" data-toggle="collapse" date-parent="#accordion"><i></i>Music</a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse">
+            <p class="panel-body">
+              From legendary venues to iconic music landmarks, the capital is buzzing with a rich music culture.<br>
+              There is an incredible array of things to do in London for music fans: check out world-class music festivals, spot new talent at cheap gigs in London and stand where some of London's brightest stars have performed their era-defining hits.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="collapse2" class="collapsed" data-toggle="collapse" date-parent="#accordion"><i></i>Sports</a>
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse">
+            <p class="panel-body">
+              The UK is located in North Western Europe and is home to a very diverse range of sports. The lush geography has led to the development of football and rugby as national past times, while other sports are slowly gaining a footing. Here are the top 5 Sports in the UK: football, cricket, rugby, badminton and tennis.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="collapse3" class="collapsed" data-toggle="collapse" date-parent="#accordion"><i></i>Fashion</a>
+            </h4>
+          </div>
+          <div id="collapse3" class="panel-collapse">
+            <p class="panel-body">
+              The city has innumerable streets that have countless luxury brands, and is filled with eye candies for Shopaholics. While shopping here may not be so cheap, it is definitely an experience worth having if you wish to glam up your wardrobe or home! So, the next time you take a trip to England, make sure you check out these best shops in London for fulfilling your wish.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="collapse4" class="collapsed" data-toggle="collapse" date-parent="#accordion"><i></i>Museum and exhibition</a>
+            </h4>
+          </div>
+          <div id="collapse4" class="panel-collapse">
+            <p class="panel-body">
+              London is a real treat for museum lovers and museums are a popular destination among London's many attractions. There are hundreds to choose from, including the British Museum, the Science Museum and the Natural History Museum. 
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="collapse5" class="collapsed" data-toggle="collapse" date-parent="#accordion"><i></i>Food</a>
+            </h4>
+          </div>
+          <div id="collapse5" class="panel-collapse">
+            <p class="panel-body">
+              As one of the world’s true melting pots, London provides visitors the opportunity to eat every and any type of cuisine including Asian, African and English specialties. Plus, those who prefer to drink their calories can imbibe from early afternoon until the pubs shut down at night.<br>
+              With a little planning, you can eat well in London whether you have a day or week in the city. We recommend that you start your culinary exploration with the following London food favorites: Fish & Chips, Sunday Roast and Full English Breakfast.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img class="feature-img" src="/image/feature.jpg" alt="london underground logo">
+    </section>
+    </div>
+<!-- videoArea -->
+  <section class="area videoArea">
+    <p class="quote">"You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose."<span> -Dr. Seuss</span></p>
+    <a class="video" href="https://www.youtube.com/watch?v=X8zLJlU_-60&ab_channel=AroundTheWorld4K"  data-rel="prettyPhoto"><i class="fas fa-video"></i></a>
+  </section>
+  <!-- picture -->
+  <section id="picture" class="picture">
+    <div class="picture-title title">
+      <h1>London Pictures</h1>
+      <p>Let's check out the beautiful scenes of London</p>
+    </div>
+    <div class="gallery">
+      <ul class="gallery-filters filters">
+        <li class="gallery-filter filter" date-filter="mix"><span>All</span></li>
+        <li class="gallery-filter filter" date-filter="music"><span>Music</span></li>
+        <li class="gallery-filter filter" date-filter="sports"><span>Sports</span></li>
+        <li class="gallery-filter filter" date-filter="landmark"><span>Landmark</span></li>
+        <li class="gallery-filter filter" date-filter="food"><span>Food</span></li>
+      </ul>
+      <ul class="gallery-container">
+        <li class="gallery-element mix music">
+          <a href="image/pic-music-british-summertime-festival.jpg" data-rel="prettyPhoto"><img src="image/pic-music-british-summertime-festival.jpg" alt="British Summertime Festival"><span>British Summertime Festival</span></a>
+        </li>
+        <li class="gallery-element mix food">
+          <a href="image/pic-food-afternoon-tea.jpg" data-rel="prettyPhoto"><img src="image/pic-food-afternoon-tea.jpg" alt="Afternoon Tea"><span>Afternoon Tea</span></a>
+        </li>
+        <li class="gallery-element mix landmarks">
+          <a href="image/pic-landmark-tower-bridge.jpg" data-rel="prettyPhoto"><img src="image/pic-landmark-tower-bridge.jpg" alt="Tower Bridge"><span>Tower Bridge</span></a>
+        </li>
+        <li class="gallery-element mix sports">
+          <a href="image/pic-sport-marathon.jpg" data-rel="prettyPhoto"><img src="image/pic-sport-marathon.jpg" alt="Marathon"><span>Marathon</span></a>
+        </li>
+        <li class="gallery-element mix food">
+          <a href="image/pic-food-sunday-roast.jpg" data-rel="prettyPhoto"><img src="image/pic-food-sunday-roast.jpg" alt="Sunday Roast"><span>Sunday Roast</span></a>
+        </li>
+        <li class="gallery-element mix landmarks">
+          <a href="image/pic-landmark-westminster-abbey.jpg" data-rel="prettyPhoto"><img src="image/pic-landmark-westminster-abbey.jpg" alt="Westminster Abbey"><span>Westminster Abbey</span></a>
+        </li>
+        <li class="gallery-element mix music">
+          <a href="image/pic-music-eastern-electrics-music-festival.jpg" data-rel="prettyPhoto"><img src="image/pic-music-eastern-electrics-music-festival.jpg" alt="Electrics Music Festival"><span>Electrics Music Festival</span></a>
+        </li>
+        <li class="gallery-element mix music">
+          <a href="image/pic-music-gala-festival.jpg" data-rel="prettyPhoto"><img src="image/pic-music-gala-festival.jpg" alt="Gala Festival"><span>Gala Festival</span></a>
+        </li>
+        <li class="gallery-element mix sports">
+          <a href="image/pic-sport-arsenal.jpg" data-rel="prettyPhoto"><img src="image/pic-sport-arsenal.jpg" alt="Arsenal"><span>Arsenal</span></a>
+        </li>
+        <li class="gallery-element mix food">
+          <a href="image/pic-food-aqua-shard.jpg" data-rel="prettyPhoto"><img src="image/pic-food-aqua-shard.jpg" alt="Aqua Shard"><span>Aqua Shard</span></a>
+        </li>
+        <li class="gallery-element mix sports">
+          <a href="image/pic-sport-wimbledon.jpg" data-rel="prettyPhoto"><img src="image/pic-sport-wimbledon.jpg" alt="Wimbledon"><span>Wimbledon</span></a>
+        </li>
+        <li class="gallery-element mix landmarks">
+          <a href="image/pic-landmark-buckingham-palace.jpg" data-rel="prettyPhoto"><img src="image/pic-landmark-buckingham-palace.jpg" alt="Buckingham Palace"><span>Buckingham Palace</span></a>
+        </li>
+        <li class="gallery-element mix sports">
+          <a href="image/pic-sport-emirates-stadium.jpg" data-rel="prettyPhoto"><img src="image/pic-sport-emirates-stadium.jpg" alt="Emirates Stadium"><span>Emirates Stadium</span></a>
+        </li>
+        <li class="gallery-element mix food">
+          <a href="image/pic-food-igloo.jpg" data-rel="prettyPhoto"><img src="image/pic-food-igloo.jpg" alt="Winter Igloo"><span>Winter Igloo</span></a>
+        </li>
+        <li class="gallery-element mix landmarks">
+          <a href="image/pic-landmark-st-pauls-cathedral.jpg" data-rel="prettyPhoto"><img src="image/pic-landmark-st-pauls-cathedral.jpg" alt="St. Paul's Cathedral"><span>St. Paul's Cathedral</span></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+<!-- temperatureArea -->
+  <section class="area temperatureArea">
+    <h2>London Avarage Temperature</h2>
+    <div class="temperature">
+      <span class="spring">15 &#8451;</span>
+      <p>Spring</p>
+    </div>
+    <div class="temperature">
+      <span class="summer">22 &#8451;</span>
+      <p>Summer</p>
+    </div>
+    <div class="temperature">
+      <span class="autumn">15 &#8451;</span>
+      <p>Autumn</p>
+    </div>
+    <div class="temperature">
+      <span class="winter"> 4 &#8451;</span>
+      <p>Winter</p>
+    </div>
+  </section>
+<!-- artist -->
+  <section id="artist" class="artist">
+    <div class="artist-title title">
+      <h1>British Artist</h1>
+      <p>The below are some world-famous artists.</p>
+    </div>
+    <div class="artist-content artist1">
+      <img src="image/singer-SamSmith.png" alt="Sam Smith">
+      <h2>Sam Smith</h2>
+      <p>Samuel Frederick Smith (born 19 May 1992) is an English singer and songwriter. Smith's debut studio album, In the Lonely Hour, was released in May 2014 on Capitol Records UK. Smith has won four Grammy Awards, three Brit Awards, three Billboard Music Awards, and an American Music Award, as well as a Golden Globe and an Academy Award through their career. They are non-binary and use they/them pronouns.</p>
+      <div class="artist-lead lead">
+        <a href="https://www.youtube.com/channel/UCvpDeGlR5wLP9Z3Tb6K0Xfg"><i class="fab fa-youtube-square"></i></a>
+        <a href="https://www.instagram.com/samsmith/"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://twitter.com/samsmith"><i class="fab fa-twitter-square"></i></a>
+      </div>
+    </div>
+    <div class="artist-content artist2">
+      <img src="image/singer-EdSheeran.jpg" alt="Ed Sheeran">
+      <h2>Ed Sheeran</h2>
+      <p>Edward Christopher Sheeran MBE (born 17 February 1991) is an English singer, songwriter, musician, record producer, actor, and businessman. After first recording music in 2004, he began gaining attention through YouTube. In early 2011, Sheeran independently released the extended play, No. 5 Collaborations Project. He signed with Asylum Records the same year.</p>
+      <div class="artist-lead lead">
+        <a href="https://www.youtube.com/channel/UC0C-w0YjGpqDXGB8IHb662A"><i class="fab fa-youtube-square"></i></a>
+        <a href="https://www.instagram.com/teddysphotos/"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://twitter.com/edsheeran"><i class="fab fa-twitter-square"></i></a>
+      </div>
+    </div>
+    <div class="artist-content artist3">
+      <img src="image/singer-adele.jpg" alt="Adele">
+      <h2>Adele</h2>
+      <p>Adele Laurie Blue Adkins MBE ( born 5 May 1988), is an English singer-songwriter. In 2007, she received the Brit Awards Critics' Choice Award and won the BBC Sound of 2008 poll. Her debut album, 19, was released in 2008. At the 2009 Grammy Awards, Adele won the awards for Best New Artist and Best Female Pop Vocal Performance.</p>
+      <div class="artist-lead lead">
+        <a href="https://www.youtube.com/channel/UCsRM0YB_dabtEPGPTKo-gcw"><i class="fab fa-youtube-square"></i></a>
+        <a href="https://www.instagram.com/adele/"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://twitter.com/adele"><i class="fab fa-twitter-square"></i></a>
+      </div>
+    </div>
+    <div class="artist-content artist4">
+      <img src="image/singer-LewisCapaldi.jpg" alt="Lewis Capaldi">
+      <h2>Lewis Capaldi</h2>
+      <p>Lewis Marc Capaldi (born 7 October 1996) is a Scottish singer-songwriter and musician. He was nominated for the Critics' Choice Award at the 2019 Brit Awards. In March 2019, his single "Someone You Loved" topped the UK Singles Chart where it remained for seven weeks, and in November 2019, reached number one on the US Billboard Hot 100, it was nominated at the 62nd Annual Grammy Awards for Song of the Year and won the 2020 Brit Award for Song of the Year. Capaldi also won the 2020 Brit Award for Best New Artist.</p>
+      <div class="artist-lead lead">
+        <a href="https://www.youtube.com/channel/UCveFkLdSOUsGwMJEgedO9dQ"><i class="fab fa-youtube-square"></i></a>
+        <a href="https://www.instagram.com/lewiscapaldi/"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://twitter.com/lewiscapaldi"><i class="fab fa-twitter-square"></i></a>
+      </div>
+    </div>
+    <div class="artist-content artist5">
+      <img src="image/singer-EllieGoulding.jpg" alt="Ellie Goulding">
+      <h2>Ellie Goulding</h2>
+      <p>Elena Jane Goulding (born 30 December 1986) is an English singer and songwriter. Her career began when she met record producers Starsmith and Frankmusik, and she was later spotted by Jamie Lillywhite, who later became her manager and A&R. After signing to Polydor Records in July 2009, Goulding released her debut extended play, An Introduction to Ellie Goulding later that year. In 2010, she became the second artist to top the BBC's annual Sound of... poll and win the Critics' Choice Award at the Brit Awards in the same year.</p>
+      <div class="artist-lead lead">
+        <a href="https://www.youtube.com/channel/UCt-am4x4ZyeohfgM85qFgdQ"><i class="fab fa-youtube-square"></i></a>
+        <a href="https://www.instagram.com/elliegoulding/"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://twitter.com/elliegoulding"><i class="fab fa-twitter-square"></i></a>
+      </div>
+    </div>
+  </section>
+<!-- location -->
+  <section id="location" class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317716.364741452!2d-0.10159865000000001!3d51.52864165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z6Iux5ZyL5YCr5pWm!5e0!3m2!1szh-TW!2shk!4v1616484428335!5m2!1szh-TW!2shk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+<!-- footer -->
+  <footer>
+    <img src="/image/logo.png" alt="logo" style="width: 100px; height: 100px;">
+    <p>&copy; 2021 LondonLover All rights reserved.</p>
+    <div class="footer-lead lead">
+      <a href="#"><i class="fab fa-instagram-square"></i></a>
+      <a href="#"><i class="fab fa-facebook-square"></i></a>
+      <a href="#"><i class="fab fa-twitter-square"></i></a>
+    </div>
+  </footer>
+<!-- script -->
+  <script src="/script.js"></script>
+</body>
+</html>
