@@ -75,17 +75,20 @@ p {
 /*=========================*/
 /* header */
 /*=========================*/
-header {
+.header {
   height: 6rem;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  right: 0;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
   z-index: 10;
+}
+.header.fixed {
+  position: fixed;
   background-color: grey;
 }
 .navbar {
@@ -115,7 +118,7 @@ header {
   text-align: center;
   overflow: hidden;
 }
-.slide-content{
+.slide-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -433,7 +436,7 @@ header {
 /*=========================*/
 /* footer */
 /*=========================*/
-footer {
+.footer {
   text-align: center;
 }
 .footer-lead .fab{
