@@ -18,14 +18,22 @@
 <!-- header -->
   <header class="header">
     <img src="image/logo.png" alt="logo" style="width: 100px; height: 100px;">
-    <ul class="navbar">
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#feature">Feature</a></li>
-      <li><a href="#picture">Picture</a></li>
-      <li><a href="#artist">Artist</a></li>
-      <li><a href="#location">Location</a></li>
-    </ul>
+    <button type="button" class="menuBtn">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="navbar-collapse">
+      <button type="button" class="menuCloseBtn">&#10006;</button>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#feature">Feature</a>
+        <a href="#picture">Picture</a>
+        <a href="#artist">Artist</a>
+        <a href="#location">Location</a>
+      </ul>
+    </div>
   </header>
 <!-- slider -->
   <section class="slider">
@@ -80,25 +88,25 @@
         <h3>My Flavour Place</h3>
         <h4>Tower Bridge</h4>
         <div class="flavour">
-          <div class="flavourBar flavourBar-TowerBridge" role="flavourBar" aria-valuenow="" aria-valuemin="0" aria-valuemin="100" style="width: 80%">
+          <div class="flavourBar flavourBar-TowerBridge" role="flavourBar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
             <span class="sr-only">80% Complete (Tower Bridge)</span>
           </div>
         </div>
         <h4>Notting Hill</h4>
         <div class="flavour">
-          <div class="flavourBar flavourBar-NottingHill" role="flavourBar" aria-valuenow="" aria-valuemin="0" aria-valuemin="100" style="width: 90%">
+          <div class="flavourBar flavourBar-NottingHill" role="flavourBar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
             <span class="sr-only">90% Complete (Notting Hill)</span>
           </div>
         </div>
         <h4>Regent Street</h4>
         <div class="flavour">
-          <div class="flavourBar flavourBar-RegentStreet" role="flavourBar" aria-valuenow="" aria-valuemin="0" aria-valuemin="100" style="width: 60%">
+          <div class="flavourBar flavourBar-RegentStreet" role="flavourBar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
             <span class="sr-only">60% Complete (Regent Street)</span>
           </div>
         </div>
         <h4>Covent Garden</h4>
         <div class="flavour">
-          <div class="flavourBar flavourBar-CoventGarden" role="flavourBar" aria-valuenow="" aria-valuemin="0" aria-valuemin="100" style="width: 70%">
+          <div class="flavourBar flavourBar-CoventGarden" role="flavourBar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
             <span class="sr-only">70% Complete (Covent Garden)</span>
           </div>
         </div>
