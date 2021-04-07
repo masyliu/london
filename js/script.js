@@ -32,6 +32,7 @@ function handleClose() {
 function resizeHandler() {
   if (window.visualViewport.width > 575) {
     nav.classList.remove('openMenu');
+  }
 }
 
 menuBtn.addEventListener('click', handleMenu);
