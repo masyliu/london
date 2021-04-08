@@ -18,20 +18,20 @@
 <!-- header -->
   <header class="header">
     <img src="image/logo.png" alt="logo" style="width: 100px; height: 100px;">
-    <button type="button" class="menuBtn">
+    <button type="button" class="menuBtn" aria-label="menu button">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
     <div class="navbar-collapse">
-      <button type="button" class="menuCloseBtn">&#10006;</button>
+      <button type="button"  class="menuCloseBtn" aria-label="close menu button">&#10006;</button>
       <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#feature">Feature</a>
-        <a href="#picture">Picture</a>
-        <a href="#artist">Artist</a>
-        <a href="#location">Location</a>
+        <a href="#" aria-label="top section">Home</a>
+        <a href="#about" aria-label="about section">About</a>
+        <a href="#feature" aria-label="feature section">Feature</a>
+        <a href="#picture" aria-label="picture section">Picture</a>
+        <a href="#artist" aria-label="artist section">Artist</a>
+        <a href="#location" aria-label="location section">Location</a>
       </ul>
     </div>
   </header>
@@ -45,31 +45,31 @@
       </div>
     </div>
     <div class="slide">
-      <img src="image/slider2.jpg" alt="The Shard" style="width: 100vw; height: 100vh;">
+      <img src="image/slider2.jpg" alt="River Thames" style="width: 100vw; height: 100vh;">
       <div class="slide-content">
         <h1>Enjoy the life</h1>
         <h2>Brimming with culture and arts as its dignity</h2>
       </div>
     </div>
     <div class="slide">
-      <img src="image/slider3.jpg" alt="Big Ben" style="width: 100vw; height: 100vh;">
+      <img src="image/slider3.jpg" alt="St Paul's Cathedral" style="width: 100vw; height: 100vh;">
       <div class="slide-content">
         <h1>Welcome to London</h1>
         <h2>The most beautiful and busy city</h2>
       </div>
     </div>
     <div class="slide">
-      <img src="image/slider4.jpg" alt="The Shard" style="width: 100vw; height: 100vh;">
+      <img src="image/slider4.jpg" alt="London Natural History Museum" style="width: 100vw; height: 100vh;">
       <div class="slide-content">
         <h1>Enjoy the life</h1>
         <h2>Brimming with culture and arts as its dignity</h2>
       </div>
     </div>
     <div class="slider-dots dots">
-      <button class="slider-dot dot"></button>
-      <button class="slider-dot dot"></button>
-      <button class="slider-dot dot"></button>
-      <button class="slider-dot dot"></button>
+      <button class="slider-dot dot" aria-label="slide 1"></button>
+      <button class="slider-dot dot" aria-label="slide 2"></button>
+      <button class="slider-dot dot" aria-label="slide 3"></button>
+      <button class="slider-dot dot" aria-label="slide 4"></button>
     </div>
   </section>
 <!-- about -->
@@ -143,24 +143,24 @@
     </div>
     <div class="accordion-container">
       <div class="accordion-body">
-        <button class="accordion open">Music</button>
+        <button class="accordion open" aria-label="music">Music</button>
         <div class="panel">
           <p>From legendary venues to iconic music landmarks, the capital is buzzing with a rich music culture.<br>
           There is an incredible array of things to do in London for music fans: check out world-class music festivals, spot new talent at cheap gigs in London and stand where some of London's brightest stars have performed their era-defining hits.</p>
         </div>
-        <button class="accordion">Sports</button>
+        <button class="accordion" aria-label="sports">Sports</button>
         <div class="panel">
           <p>The UK is located in North Western Europe and is home to a very diverse range of sports. The lush geography has led to the development of football and rugby as national past times, while other sports are slowly gaining a footing. Here are the top 5 Sports in the UK: football, cricket, rugby, badminton and tennis.</p>
         </div>
-        <button class="accordion">Fashion</button>
+        <button class="accordion" aria-label="fashion">Fashion</button>
         <div class="panel">
           <p>The city has innumerable streets that have countless luxury brands, and is filled with eye candies for Shopaholics. While shopping here may not be so cheap, it is definitely an experience worth having if you wish to glam up your wardrobe or home! So, the next time you take a trip to England, make sure you check out these best shops in London for fulfilling your wish.</p>
         </div>
-        <button class="accordion">Museum and exhibition</button>
+        <button class="accordion" aria-label="museum and exhibition">Museum and exhibition</button>
         <div class="panel">
           <p>London is a real treat for museum lovers and museums are a popular destination among London's many attractions. There are hundreds to choose from, including the British Museum, the Science Museum and the Natural History Museum. </p>
         </div>
-        <button class="accordion">Food</button>
+        <button class="accordion" aria-label="food">Food</button>
         <div class="panel">
           <p>As one of the world’s true melting pots, London provides visitors the opportunity to eat every and any type of cuisine including Asian, African and English specialties. Plus, those who prefer to drink their calories can imbibe from early afternoon until the pubs shut down at night.<br>
           With a little planning, you can eat well in London whether you have a day or week in the city. We recommend that you start your culinary exploration with the following London food favorites: Fish & Chips, Sunday Roast and Full English Breakfast.</p>
@@ -173,7 +173,7 @@
   <section class="area videoArea">
     <p class="quote">"You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose."<br>
       <span> -Dr. Seuss</span></p>
-    <a class="video" href="https://www.youtube.com/watch?v=X8zLJlU_-60&ab_channel=AroundTheWorld4K"  data-rel="prettyPhoto"><i class="fas fa-video"></i></a>
+    <a class="video" href="https://www.youtube.com/watch?v=X8zLJlU_-60&ab_channel=AroundTheWorld4K" aria-label="video about london" data-rel="prettyPhoto"><i class="fas fa-video"></i></a>
   </section>
   <!-- picture -->
   <section id="picture" class="picture">
@@ -183,7 +183,7 @@
     </div>
     <div class="gallery">
       <ul class="gallery-filters">
-        <li class="gallery-filter select" data-type="mix"><span>All</span></li>
+        <li class="gallery-filter selectFilter" data-type="mix"><span>All</span></li>
         <li class="gallery-filter" data-type="sports"><span>Sports</span></li>
         <li class="gallery-filter" data-type="landmark"><span>Landmark</span></li>
         <li class="gallery-filter" data-type="music"><span>Music</span></li>
@@ -269,9 +269,9 @@
       <h2>Sam Smith</h2>
       <p>Samuel Frederick Smith (born 19 May 1992) is an English singer and songwriter. Smith's debut studio album, In the Lonely Hour, was released in May 2014 on Capitol Records UK. Smith has won four Grammy Awards, three Brit Awards, three Billboard Music Awards, and an American Music Award, as well as a Golden Globe and an Academy Award through their career. They are non-binary and use they/them pronouns.</p>
       <div class="artist-lead lead">
-        <a href="https://www.youtube.com/channel/UCvpDeGlR5wLP9Z3Tb6K0Xfg"><i class="fab fa-youtube-square"></i></a>
-        <a href="https://www.instagram.com/samsmith/"><i class="fab fa-instagram-square"></i></a>
-        <a href="https://twitter.com/samsmith"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.youtube.com/channel/UCvpDeGlR5wLP9Z3Tb6K0Xfg" aria-label="Sam Smith's youtube"><i class="fab fa-youtube-square"></i></a>
+        <a href="https://www.instagram.com/samsmith/" aria-label="Sam Smith's instagram"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://twitter.com/samsmith" aria-label="Sam Smith's twitter"><i class="fab fa-twitter-square"></i></a>
       </div>
     </div>
     <div class="artist-content artist2">
@@ -279,9 +279,9 @@
       <h2>Ed Sheeran</h2>
       <p>Edward Christopher Sheeran MBE (born 17 February 1991) is an English singer, songwriter, musician, record producer, actor, and businessman. After first recording music in 2004, he began gaining attention through YouTube. In early 2011, Sheeran independently released the extended play, No. 5 Collaborations Project. He signed with Asylum Records the same year.</p>
       <div class="artist-lead lead">
-        <a href="https://www.youtube.com/channel/UC0C-w0YjGpqDXGB8IHb662A"><i class="fab fa-youtube-square"></i></a>
-        <a href="https://www.instagram.com/teddysphotos/"><i class="fab fa-instagram-square"></i></a>
-        <a href="https://twitter.com/edsheeran"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.youtube.com/channel/UC0C-w0YjGpqDXGB8IHb662A" aria-label="Ed Sheeran's youtube"><i class="fab fa-youtube-square"></i></a>
+        <a href="https://www.instagram.com/teddysphotos/" aria-label="Ed Sheeran's instagram"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://twitter.com/edsheeran" aria-label="Ed Sheeran's twitter"><i class="fab fa-twitter-square"></i></a>
       </div>
     </div>
     <div class="artist-content artist3">
@@ -289,9 +289,9 @@
       <h2>Adele</h2>
       <p>Adele Laurie Blue Adkins MBE ( born 5 May 1988), is an English singer-songwriter. In 2007, she received the Brit Awards Critics' Choice Award and won the BBC Sound of 2008 poll. Her debut album, 19, was released in 2008. At the 2009 Grammy Awards, Adele won the awards for Best New Artist and Best Female Pop Vocal Performance.</p>
       <div class="artist-lead lead">
-        <a href="https://www.youtube.com/channel/UCsRM0YB_dabtEPGPTKo-gcw"><i class="fab fa-youtube-square"></i></a>
-        <a href="https://www.instagram.com/adele/"><i class="fab fa-instagram-square"></i></a>
-        <a href="https://twitter.com/adele"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.youtube.com/channel/UCsRM0YB_dabtEPGPTKo-gcw" aria-label="Adele's youtube"><i class="fab fa-youtube-square"></i></a>
+        <a href="https://www.instagram.com/adele/" aria-label="Adele's instagram"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://twitter.com/adele" aria-label="Adele's twitter"><i class="fab fa-twitter-square"></i></a>
       </div>
     </div>
     <div class="artist-content artist4">
@@ -299,9 +299,9 @@
       <h2>Lewis Capaldi</h2>
       <p>Lewis Marc Capaldi (born 7 October 1996) is a Scottish singer-songwriter and musician. He was nominated for the Critics' Choice Award at the 2019 Brit Awards. In March 2019, his single "Someone You Loved" topped the UK Singles Chart where it remained for seven weeks, and in November 2019, reached number one on the US Billboard Hot 100, it was nominated at the 62nd Annual Grammy Awards for Song of the Year and won the 2020 Brit Award for Song of the Year. Capaldi also won the 2020 Brit Award for Best New Artist.</p>
       <div class="artist-lead lead">
-        <a href="https://www.youtube.com/channel/UCveFkLdSOUsGwMJEgedO9dQ"><i class="fab fa-youtube-square"></i></a>
-        <a href="https://www.instagram.com/lewiscapaldi/"><i class="fab fa-instagram-square"></i></a>
-        <a href="https://twitter.com/lewiscapaldi"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.youtube.com/channel/UCveFkLdSOUsGwMJEgedO9dQ" aria-label="Lewis Capaldi's youtube"><i class="fab fa-youtube-square"></i></a>
+        <a href="https://www.instagram.com/lewiscapaldi/" aria-label="Lewis Capaldi's instagram"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://twitter.com/lewiscapaldi" aria-label="Lewis Capaldi's twitter"><i class="fab fa-twitter-square"></i></a>
       </div>
     </div>
     <div class="artist-content artist5">
@@ -309,24 +309,24 @@
       <h2>Ellie Goulding</h2>
       <p>Elena Jane Goulding (born 30 December 1986) is an English singer and songwriter. Her career began when she met record producers Starsmith and Frankmusik, and she was later spotted by Jamie Lillywhite, who later became her manager and A&R. After signing to Polydor Records in July 2009, Goulding released her debut extended play, An Introduction to Ellie Goulding later that year. In 2010, she became the second artist to top the BBC's annual Sound of... poll and win the Critics' Choice Award at the Brit Awards in the same year.</p>
       <div class="artist-lead lead">
-        <a href="https://www.youtube.com/channel/UCt-am4x4ZyeohfgM85qFgdQ"><i class="fab fa-youtube-square"></i></a>
-        <a href="https://www.instagram.com/elliegoulding/"><i class="fab fa-instagram-square"></i></a>
-        <a href="https://twitter.com/elliegoulding"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.youtube.com/channel/UCt-am4x4ZyeohfgM85qFgdQ" aria-label="Ellie Goulding's youtube"><i class="fab fa-youtube-square"></i></a>
+        <a href="https://www.instagram.com/elliegoulding/" aria-label="Ellie Goulding's instagram"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://twitter.com/elliegoulding" aria-label="Ellie Goulding's twitter"><i class="fab fa-twitter-square"></i></a>
       </div>
     </div>
   </section>
 <!-- location -->
   <section id="location" class="location">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317716.364741452!2d-0.10159865000000001!3d51.52864165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z6Iux5ZyL5YCr5pWm!5e0!3m2!1szh-TW!2shk!4v1616484428335!5m2!1szh-TW!2shk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317716.364741452!2d-0.10159865000000001!3d51.52864165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z6Iux5ZyL5YCr5pWm!5e0!3m2!1szh-TW!2shk!4v1616484428335!5m2!1szh-TW!2shk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="london's map"></iframe>
   </section>
 <!-- footer -->
   <footer class="footer">
     <img src="image/logo.png" alt="logo" style="width: 100px; height: 100px;">
     <p>&copy; 2021 LondonLover All rights reserved.</p>
     <div class="footer-lead lead">
-      <a href="#"><i class="fab fa-instagram-square"></i></a>
-      <a href="#"><i class="fab fa-facebook-square"></i></a>
-      <a href="#"><i class="fab fa-twitter-square"></i></a>
+      <a href="#" aria-label="my instagram"><i class="fab fa-instagram-square"></i></a>
+      <a href="#" aria-label="my facebook"><i class="fab fa-facebook-square"></i></a>
+      <a href="#" aria-label="my twitter"><i class="fab fa-twitter-square"></i></a>
     </div>
   </footer>
 <!-- script -->

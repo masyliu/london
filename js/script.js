@@ -23,8 +23,9 @@ const menuCloseBtn = document.querySelector('.menuCloseBtn');
 const nav = document.querySelector('.navbar-collapse');
 
 function handleMenu() {
-  nav.classList.add('openMenu');
+  nav.classList.toggle('openMenu');
 }
+
 function handleClose() {
   nav.classList.remove('openMenu');
 }
@@ -37,4 +38,4 @@ function resizeHandler() {
 
 menuBtn.addEventListener('click', handleMenu);
 menuCloseBtn.addEventListener('click', handleClose);
-window.visualViewport.addEventListene('resize', resizeHandler);
+window.visualViewport.addEventListener('resize', resizeHandler);

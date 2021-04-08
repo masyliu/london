@@ -13,9 +13,9 @@ function handleSelect(n) {
 }
 
 filters.forEach(filter => filter.addEventListener('click', function() {
-  let current = document.querySelector('.select');
-  current.classList.remove('select');
-  this.classList.add('select');
+  let current = document.querySelector('.selectFilter');
+  current.classList.remove('selectFilter');
+  this.classList.add('selectFilter');
   selector = this.dataset.type;
   handleSelect(selector);
  })
