@@ -175,19 +175,30 @@ p.quote {
   padding: 0 0.8em;
   position: relative;
 }
-.navbar > a::before {
+
+.navbar > a::before,
+.navbar > a::after {
   content: '';
-  width: 70%;
   height: 0.1rem;
   position: absolute;
   top: -35%;
+  left: 0.8em;
+  width: 70%;
   background-color: white;
-  -webkit-transition: background-color 0.2s linear forwards;
-  -o-transition: background-color 0.2s linear forwards;
-  transition: background-color 0.2s linear forwards;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+  -webkit-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+}
+.navbar > a::before{
+  width: 0%;
 }
 .navbar > a:hover::before,
-.navbar > a.activeDot::before {
+.navbar > a.activeNav:before {
+  z-index: 2;
+  width: 70%;
   background-color: var(--col2);
 }
 @media screen and (max-width: 575px) {
@@ -199,11 +210,17 @@ p.quote {
     top: 0;
     right: 0;
     background: var(--col5);
-    clip-path: circle(0% at top right);
+    -webkit-clip-path: circle(0% at top right);
+            clip-path: circle(0% at top right);
+    -webkit-transition: -webkit-clip-path 1000ms ease-in-out;
+    transition: -webkit-clip-path 1000ms ease-in-out;
+    -o-transition: clip-path 1000ms ease-in-out;
     transition: clip-path 1000ms ease-in-out;
+    transition: clip-path 1000ms ease-in-out, -webkit-clip-path 1000ms ease-in-out;
   }
   .navbar-collapse.openMenu {
-    clip-path: circle(150% at top right);
+    -webkit-clip-path: circle(150% at top right);
+            clip-path: circle(150% at top right);
   }
   .navbar-collapse >.menuCloseBtn {
     display: block;
@@ -231,8 +248,12 @@ p.quote {
   .navbar-collapse > .navbar > a {
     padding: 1em 3em;
     text-shadow: initial;
+    -webkit-transition: color 300ms ease-out;
+    -o-transition: color 300ms ease-out;
+    transition: color 300ms ease-out;
   }
-  .navbar-collapse > .navbar > a::before {
+  .navbar-collapse > .navbar > a::before,
+  .navbar-collapse > .navbar > a::after {
     content: unset;
   }
   .navbar-collapse > .navbar > a:hover {
@@ -310,6 +331,7 @@ p.quote {
   margin-top: 1rem;
 }
 .flavour {
+  overflow: hidden;
   height: 2rem;
   border-radius: 1rem;
   margin-bottom: 0.5em;
@@ -322,6 +344,14 @@ p.quote {
   -webkit-box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.4);
           box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.4);
 }
+.flavourPlace.showBar .flavourBar {
+  animation: showBar 2000ms forwards;
+}
+@keyframes showBar {
+  0% {transform: translateX(-100%);};
+  100% {transform: translateX(0);}
+}
+
 @media screen and (max-width:768px) {
   .about-container {
     grid-template-columns: 1fr;
