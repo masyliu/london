@@ -67,6 +67,13 @@ function checkNav() {
   observer.observe(document.querySelector('#locationNav'));
 }
 
+window.addEventListener('scroll', debounce(checkNav));
+
+
+// ========================
+// About - Flavour place bar
+// ========================
+
 function showBar() {
   let flavourPlace = document.querySelector('.flavourPlace');
   let observer = new IntersectionObserver(function(bar){
@@ -79,11 +86,7 @@ function showBar() {
   observer.observe(flavourPlace);
 }
 
-window.addEventListener('scroll', debounce(checkNav));
 window.addEventListener('scroll', debounce(showBar));
-
-
-
 
 // ========================
 // Collapse Navbar
