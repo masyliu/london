@@ -345,11 +345,16 @@ p.quote {
           box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.4);
 }
 .flavourPlace.showBar .flavourBar {
-  animation: showBar 2000ms forwards;
+  -webkit-animation: showBar 2000ms forwards;
+          animation: showBar 2000ms forwards;
+}
+@-webkit-keyframes showBar {
+  0% {-webkit-transform: translateX(-100%);transform: translateX(-100%);};
+  100% {-webkit-transform: translateX(0);transform: translateX(0);}
 }
 @keyframes showBar {
-  0% {transform: translateX(-100%);};
-  100% {transform: translateX(0);}
+  0% {-webkit-transform: translateX(-100%);transform: translateX(-100%);};
+  100% {-webkit-transform: translateX(0);transform: translateX(0);}
 }
 
 @media screen and (max-width:768px) {
