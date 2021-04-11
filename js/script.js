@@ -71,7 +71,7 @@ window.addEventListener('scroll', debounce(checkNav));
 
 
 // ========================
-// About - Flavour place bar
+// About - show flavour place bar on scroll
 // ========================
 
 function showBar() {
@@ -87,6 +87,34 @@ function showBar() {
 }
 
 window.addEventListener('scroll', debounce(showBar));
+
+
+// ========================
+// About - show artist card on scroll
+// ========================
+
+const artistCards = document.querySelectorAll('.artist-content');
+
+function showArtist() {
+  artistCards.forEach(artistCard => {
+    console.log(artistCard.height);
+    const slideInAt = window.scrollY + window.innerHeight;
+    const cardBottom = artistCard.offsetTop + artistCard.offsetHeight;
+    const isHalfShown = slideInAt > artistCard.offsetTop;
+    const isNotScrollPast = window.scrollY < cardBottom;
+    console.log(artistCard.offsetHeight)
+    if (isHalfShown && isNotScrollPast) {
+      artistCard.classList.add('showArtist');
+    } else {
+      artistCard.classList.remove('showArtist');
+    }
+  });
+}
+
+window.addEventListener('scroll', debounce(showArtist));
+
+
+
 
 // ========================
 // Collapse Navbar
@@ -105,13 +133,14 @@ function handleClose() {
 }
 
 function resizeHandler() {
-  if (window.visualViewport.width > 575) {
+  let viewWidth = window.innerWidth || window.visualViewport.width;
+  if (viewWidth > 575 ) {
     navbarCollapse.classList.remove('openMenu');
   }
 }
 
 menuBtn.addEventListener('click', handleMenu);
 menuCloseBtn.addEventListener('click', handleClose);
-window.visualViewport.addEventListener('resize', resizeHandler);
+window.addEventListener('resize', resizeHandler);
 
 

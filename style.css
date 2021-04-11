@@ -668,15 +668,18 @@ p.quote {
       -ms-flex-align: center;
           align-items: center;
   text-align: justify;
+  overflow: hidden;
 }
 .artist-title {
   grid-column: 1 / -1;
 }
 .artist-content:nth-of-type(odd) {
   grid-column: 2 / span 1;
+  transform: translateX(80%) scale(0.95);
 }
 .artist-content:nth-of-type(even) {
   grid-column: 1 / span 1;
+  transform: translateX(-80%) scale(0.95);
 }
 .artist1 {
   grid-row: 2 / span 2;
@@ -706,6 +709,13 @@ p.quote {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background-color: var(--col5);
+  opacity: 0;
+  transition: 500ms cubic-bezier(.39,.58,.89,1.54);
+  transition-property: opacity, transform;
+}
+.artist-content.showArtist {
+  opacity: 1;
+  transform: translateX(0)  scale(1);
 }
 .artist-content > img {
   grid-column: 1 / 4;
