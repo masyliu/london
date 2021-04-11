@@ -97,12 +97,10 @@ const artistCards = document.querySelectorAll('.artist-content');
 
 function showArtist() {
   artistCards.forEach(artistCard => {
-    console.log(artistCard.height);
     const slideInAt = window.scrollY + window.innerHeight;
     const cardBottom = artistCard.offsetTop + artistCard.offsetHeight;
     const isHalfShown = slideInAt > artistCard.offsetTop;
     const isNotScrollPast = window.scrollY < cardBottom;
-    console.log(artistCard.offsetHeight)
     if (isHalfShown && isNotScrollPast) {
       artistCard.classList.add('showArtist');
     } else {
