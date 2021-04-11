@@ -1,3 +1,7 @@
+// ========================
+// Feature - accordion
+// ========================
+
 const accordions = document.querySelectorAll('.accordion');
 let opened = document.querySelector('.open');
 handlePanel(opened);

@@ -1,4 +1,26 @@
 // ========================
+// Debounce
+// ========================
+
+
+function debounce(func, wait = 20, immediate = true) {
+  let timeout;
+  return function() {
+    let context = this, args = arguments;
+    let later = function() {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    let callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+}
+
+
+
+// ========================
 // Fixed-header
 // ========================
 
@@ -15,8 +37,9 @@ function fixedHeader() {
 window.addEventListener('scroll', fixedHeader);
 
 
+
 // ========================
-// Activate Scrollspy Navbar
+// Scrollspy Navbar
 // ========================
 
 // for clickable event
@@ -32,21 +55,6 @@ navs.forEach(nav => nav.addEventListener('click', handleNav));
 
 
 // for Scrollspy Navbar
-
-function debounce(func, wait = 20, immediate = true) {
-  let timeout;
-  return function() {
-    let context = this, args = arguments;
-    let later = function() {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-    let callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
-  };
-}
 
 function checkNav() {
   let observer = new IntersectionObserver(function(entries){
@@ -68,49 +76,6 @@ function checkNav() {
 }
 
 window.addEventListener('scroll', debounce(checkNav));
-
-
-// ========================
-// About - show flavour place bar on scroll
-// ========================
-
-function showBar() {
-  let flavourPlace = document.querySelector('.flavourPlace');
-  let observer = new IntersectionObserver(function(bar){
-    if (bar[0]['isIntersecting'] === true) {
-      flavourPlace.classList.add('showBar');
-    } else {
-      flavourPlace.classList.remove('showBar');
-    }
-  }, {rootMargin: '-100px', threshold: [0]});
-  observer.observe(flavourPlace);
-}
-
-window.addEventListener('scroll', debounce(showBar));
-
-
-// ========================
-// About - show artist card on scroll
-// ========================
-
-const artistCards = document.querySelectorAll('.artist-content');
-
-function showArtist() {
-  artistCards.forEach(artistCard => {
-    const slideInAt = window.scrollY + window.innerHeight;
-    const cardBottom = artistCard.offsetTop + artistCard.offsetHeight;
-    const isHalfShown = slideInAt > artistCard.offsetTop;
-    const isNotScrollPast = window.scrollY < cardBottom;
-    if (isHalfShown && isNotScrollPast) {
-      artistCard.classList.add('showArtist');
-    } else {
-      artistCard.classList.remove('showArtist');
-    }
-  });
-}
-
-window.addEventListener('scroll', debounce(showArtist));
-
 
 
 
@@ -140,5 +105,3 @@ function resizeHandler() {
 menuBtn.addEventListener('click', handleMenu);
 menuCloseBtn.addEventListener('click', handleClose);
 window.addEventListener('resize', resizeHandler);
-
-

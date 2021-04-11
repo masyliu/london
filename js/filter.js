@@ -1,3 +1,7 @@
+// ========================
+// Gallery - filter
+// ========================
+
 const filters = document.querySelectorAll('.gallery-filter');
 const el = document.querySelectorAll('.gallery-element');
 let selector = 'mix';
