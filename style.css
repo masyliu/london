@@ -95,7 +95,7 @@ p.quote {
   text-transform: uppercase;
 }
 .area {
-  height: 32rem;
+  height: 20rem;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,6 +370,7 @@ p.quote {
 /*=========================*/
 .quoteArea {
   background: url(image/area-quote.jpg), var(--col5);
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-blend-mode: overlay;
@@ -437,6 +438,7 @@ p.quote {
 /*=========================*/
 .videoArea {
   background: url(image/area-video.jpg), var(--col7);
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-blend-mode: exclusion;
@@ -619,6 +621,7 @@ p.quote {
 /*=========================*/
 .temperatureArea {
   background: url(image/area-temperature.jpg), var(--col5);
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
